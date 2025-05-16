@@ -24,12 +24,19 @@ export default function PianoLessonsApp() {
         </Link>
       </div>
 
-      <h1 className="text-5xl text-white text-center mb-4 font-[\'Baguet Script\',cursive]">
+      <h1
+        className="text-5xl text-white text-center mb-4"
+        style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+      >
         Hi little maestros!
       </h1>
-      <h2 className="text-2xl text-white text-center mb-8 font-[\'Baguet Script\',cursive]">
+      <h2
+        className="text-2xl text-white text-center mb-8"
+        style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+      >
         Who wants to become the piano man!
       </h2>
+          
 
       <img src="https://cdn.pixabay.com/photo/2017/01/31/20/20/piano-2023025_1280.png" alt="Cartoon Grand Piano" className="w-64 h-auto mb-8 rounded-xl shadow-lg" />
 
