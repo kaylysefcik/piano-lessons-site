@@ -13,7 +13,7 @@ const icons = [
 ];
 
 export default function PianoLessonsApp() {
-  const [hoveredIndex, setHoveredIndex] = React.useState(null);
+  const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
   const router = useRouter();
 
   return (
