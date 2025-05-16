@@ -1,0 +1,18 @@
+# within the command prompt type: "C:\Users\kayly\piano-lessons-site>npm run dev 
+# use cd to get into the folder
+
+# then test it locally at http://localhost:3000
+
+# to get it universal I have to upload to Git and Vercel with:
+# git add .
+# git commit -m "Add comment of what changed here"
+# git push
+
+# then can run it by chioce : https://piano-lessons-site.vercel.app/
+
+# 🔁 Summary
+# How	URL Format	When to Use
+# ✅ Main Vercel site	https://your-site-name.vercel.app	Live website
+# ✅ Preview deployment	https://branch-name--your-site.vercel.app	Test # # new features (optional)
+# ✅ Local testing	http://localhost:3000	Before pushing to GitHub
+# ✅ Vercel dashboard	https://vercel.com/dashboard	Manage, view logs, # or roll back
