@@ -24,7 +24,7 @@ export default function Home() {
         className="w-72 h-auto mb-10 rounded-2xl shadow-lg"
       />
 
-      <div className="flex overflow-x-auto space-x-6 w-full max-w-4xl py-4">
+      <div className="flex overflow-x-auto space-x-6 w-full max-w-4xl py-4 mb-10">
         {icons.map((item, index) => (
           <motion.div
             key={index}
@@ -47,6 +47,49 @@ export default function Home() {
           </motion.div>
         ))}
       </div>
+
+      {/* Contact Form */}
+      <form
+        action="https://formsubmit.co/kayly.sefcik@gmail.com"
+        method="POST"
+        className="w-full max-w-xl bg-white p-6 rounded-2xl shadow-md"
+      >
+        <h3 className="text-2xl font-semibold mb-4 text-center">Contact Me</h3>
+
+        <label className="block mb-2 font-medium">Your Email (required):</label>
+        <input
+          type="email"
+          name="email"
+          required
+          className="w-full p-2 border border-gray-300 rounded-lg mb-4"
+        />
+
+        <label className="block mb-2 font-medium">Preferred Phone (optional):</label>
+        <input
+          type="tel"
+          name="phone"
+          className="w-full p-2 border border-gray-300 rounded-lg mb-4"
+        />
+
+        <label className="block mb-2 font-medium">
+          Tell me about your child’s interests (optional):
+        </label>
+        <textarea
+          name="comments"
+          rows={4}
+          className="w-full p-2 border border-gray-300 rounded-lg mb-4"
+        ></textarea>
+
+        {/* Anti-spam */}
+        <input type="hidden" name="_captcha" value="false" />
+
+        <button
+          type="submit"
+          className="bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-600 transition-all w-full"
+        >
+          Send
+        </button>
+      </form>
     </div>
   );
 }
